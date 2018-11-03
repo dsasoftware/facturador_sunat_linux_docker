@@ -25,13 +25,13 @@ Desde este sistema pueden emitirse:
 
 ## Quick start
 ```
-docker run --name facturador-sunat -p 8090:8090 aschavez/facturador-sunat
+docker run --name facturador-sunat -p 9000:9000 docker pull stbperu/sfs:1.2
 ```
 
 
 ## Exponiendo los directorios principales
 ```
-docker run --name facturador-sunat -v /data:/data0/facturador/DATA -p 8090:8090 aschavez/facturador-sunat
+docker run --name facturador-sunat -v /SFS_v1.2_data:/opt/SFS_v1.2/sunat_archivos/sfs -p 9000:9000 docker pull stbperu/sfs:1.2
 ```
 
 Los directorios principales son los siguientes:
@@ -53,14 +53,14 @@ Los directorios principales son los siguientes:
 
 ## Ejecutando en modo deamon
 ```
-docker run --name facturador-sunat -d -p 8090:8090 aschavez/facturador-sunat
+docker run --name facturador-sunat -d -p 9000:9000 docker pull stbperu/sfs:1.2
 ```
 
 ## Mediante `docker-compose.yml`
 ```
 app:
-  build: aschavez/facturador-sunat
+  build: stbperu/sfs:1.2
   ports:
-  - 8090:8090
+  - 9000:9000
 ```
 > *PD*: A considerar, luego de ejecutar el `docker run`, para que se muestre el aplicativo tomara unos cuantos segundos.
