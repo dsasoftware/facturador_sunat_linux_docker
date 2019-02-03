@@ -25,13 +25,13 @@ Desde este sistema pueden emitirse:
 
 ## Quick start
 ```
-docker run --name facturador-sunat -p 9000:9000 docker pull stbperu/sfs:1.2
+docker run --name facturador-sunat -p 9000:9000 stbperu/sfs:1.2
 ```
 
 
 ## Exponiendo los directorios principales
 ```
-docker run --name facturador-sunat -v /SFS_v1.2_data:/opt/SFS_v1.2/sunat_archivos/sfs -p 9000:9000 docker pull stbperu/sfs:1.2
+docker run --name facturador-sunat -v /SFS_v1.2_data:/opt/SFS_v1.2/sunat_archivos/sfs -p 9000:9000 stbperu/sfs:1.2
 ```
 
 Los directorios principales son los siguientes:
@@ -53,7 +53,7 @@ Los directorios principales son los siguientes:
 
 ## Ejecutando en modo deamon
 ```
-docker run --name facturador-sunat -d -p 9000:9000 docker pull stbperu/sfs:1.2
+docker run --name facturador-sunat -d -p 9000:9000 stbperu/sfs:1.2
 ```
 
 ## Mediante `docker-compose.yml`
