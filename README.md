@@ -38,18 +38,18 @@ Los directorios principales son los siguientes:
 
 |Directorio|Contenido|
 |----------|---------|
-|/opt/SFS_v1.2/sunat_archivos/ALMCERT|Directorio que contiene la base de datos de certificados para firmar comprobantes de pago|
-|/opt/SFS_v1.2/sunat_archivos/CERT|Directorio de transito, que permite copiar el certificado para ser registrado en la BD de certificados: `ALMCERT`|
-|/opt/SFS_v1.2/sunat_archivos/DATA|Directorio donde debe copiarse los comprobantes de pago en formato TXT, JSON ó XML.|
-|/opt/SFS_v1.2/sunat_archivos/ENVIO|Directorio donde se encuentran los comprobantes de pago enviados hacia SUNAT, los cuales se encuentran comprimidos en un formato zip por cada archivo.|
-|/opt/SFS_v1.2/sunat_archivos/FIRMA|Directorio donde se encuentran los archivos XML, firmados por el facturador y pendientes de enviar a SUNAT.|
-|/opt/SFS_v1.2/sunat_archivos/FORM|Directorio en el cual se encuentran los fuentes para confección de los reportes de impresión de boletas, facturas, notas de crédito y notas de débito.|
-|/opt/SFS_v1.2/sunat_archivos/ORIDAT|Origen de datos de los reportes de impresión del directorio `FORM`|
-|/opt/SFS_v1.2/sunat_archivos/PARSE|Archivos XML que fueron validados, en esquema y según validaciones de contenido.|
-|/opt/SFS_v1.2/sunat_archivos/REPO|Archivo que contiene los PDF generados por el facturador.|
-|/opt/SFS_v1.2/sunat_archivos/RPTA|Directorio donde se encuentran los archivos de respuesta de la SUNAT. Sólo se guardan CDR OK.|
-|/opt/SFS_v1.2/sunat_archivos/TEMP|Directorio temporales del facturador, aquí se encuentran los archivos xml sin validar, cuando vienen de un formato json o plano.|
-|/opt/SFS_v1.2/sunat_archivos/VALI|Formatos de Plantillas para generar los pdf y xml|
+|/opt/SFS_v1.2/sunat_archivos/sfs/ALMCERT|Directorio que contiene la base de datos de certificados para firmar comprobantes de pago|
+|/opt/SFS_v1.2/sunat_archivos/sfs/CERT|Directorio de transito, que permite copiar el certificado para ser registrado en la BD de certificados: `ALMCERT`|
+|/opt/SFS_v1.2/sunat_archivos/sfs/DATA|Directorio donde debe copiarse los comprobantes de pago en formato TXT, JSON ó XML.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/ENVIO|Directorio donde se encuentran los comprobantes de pago enviados hacia SUNAT, los cuales se encuentran comprimidos en un formato zip por cada archivo.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/FIRMA|Directorio donde se encuentran los archivos XML, firmados por el facturador y pendientes de enviar a SUNAT.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/FORM|Directorio en el cual se encuentran los fuentes para confección de los reportes de impresión de boletas, facturas, notas de crédito y notas de débito.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/ORIDAT|Origen de datos de los reportes de impresión del directorio `FORM`|
+|/opt/SFS_v1.2/sunat_archivos/sfs/PARSE|Archivos XML que fueron validados, en esquema y según validaciones de contenido.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/REPO|Archivo que contiene los PDF generados por el facturador.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/RPTA|Directorio donde se encuentran los archivos de respuesta de la SUNAT. Sólo se guardan CDR OK.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/TEMP|Directorio temporales del facturador, aquí se encuentran los archivos xml sin validar, cuando vienen de un formato json o plano.|
+|/opt/SFS_v1.2/sunat_archivos/sfs/VALI|Formatos de Plantillas para generar los pdf y xml|
 
 ## Ejecutando en modo deamon
 ```
